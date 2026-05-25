@@ -1,14 +1,14 @@
 {
-    "Author": "Marulu, StreetRat",
+    "Author": "NightmareXIV, Marulu, StreetRat",
     "Name": "MaskedCarnivale",
     "InternalName": "MaskedCarnivale",
     "Punchline": "Display the game in a separate window",
     "Description": "Allows you to record, or stream your game without displaying Dalamud plugins.",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/ProjectMimer/MaskedCarnivale",
+    "RepoUrl": "https://github.com/NightmareXIV/MaskedCarnivale",
     "Tags": [
         "utility"
     ],
     "AcceptsFeedback": false,
-    "DalamudApiLevel": 14
+    "DalamudApiLevel": 15
 }
