@@ -6,6 +6,16 @@ Optionally you can also have the window display the game without a UI at all, so
 
 The plugin menu can be displayed by typing /carnivale in chat or by using /carnivale enable or /carnivale disable to start or stop the window.
 
+## Testing exclusive
+This plugin is testing exclusive. You must enable plugin testing before you can install it. To do so, follow this set of instructions:
+
+1. Go to `/xlsettings`
+2. Go to "Experimental" tab
+3. Enable "Get plugins testing builds" checkbox
+4. Save settings by pressing a :floppy_disk: button in bottom right corner of the window
+
+Now you can proceed to install the plugin.
+
 ## Known issues
 Gamma should be set to any value other than 50 for mode with UI to work. 
 
