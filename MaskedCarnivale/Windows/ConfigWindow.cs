@@ -25,8 +25,6 @@ public class ConfigWindow : Window, IDisposable
     }
     public override void Draw()
     {
-        ShowKofi();
-
         if (ImGui.BeginChild("Options"))
         {
             bool enable = cfg.enable;
@@ -85,23 +83,11 @@ public class ConfigWindow : Window, IDisposable
 
             WindowNameConfig.Draw();
 
-            ImGui.InputInt("RenderIndexOverride", ref Plugin.RenderIndexOverride, 1, 1);
+            if(ImGui.CollapsingHeader("Debug options"))
+            {
+                ImGui.InputInt("RenderIndexOverride", ref Plugin.RenderIndexOverride, 1, 1);
+            }
         }
-        ImGui.EndChild();
-    }
-    private void ShowKofi()
-    {
-        return;
-        ImGui.BeginChild("Support", new Vector2(350, 50), true);
-
-        ImGui.PushStyleColor(ImGuiCol.Button, 0xFF000000 | 0x005E5BFF);
-        ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xDD000000 | 0x005E5BFF);
-        ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xAA000000 | 0x005E5BFF);
-        if (ImGui.Button("Support via Ko-fi"))
-        {
-            Process.Start(new ProcessStartInfo { FileName = "https://ko-fi.com/projectmimer", UseShellExecute = true });
-        }
-        ImGui.PopStyleColor(3);
         ImGui.EndChild();
     }
 }
